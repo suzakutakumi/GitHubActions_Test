@@ -5,8 +5,12 @@ on:
 
 jobs:
   build:
-    name: test_dayo
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - run: cat test.txt&echo "1">>test.txt
+      - name: usertest
+        uses: actions/checkout@v1
+      
+      - name: test_dayo
+        run: |
+          cat test.txt
+          echo "1">>test.txt
