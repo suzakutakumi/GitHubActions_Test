@@ -13,4 +13,3 @@ jobs:
       - name: python doing
         run: |
           python test.py
-          python test.py>test.txt
