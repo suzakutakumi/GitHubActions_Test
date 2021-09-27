@@ -1,0 +1,16 @@
+name: test python
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: user
+        uses: actions/checkout@v1
+      
+      - name: python doing
+        run: |
+          python test.py
+          python test.py>test.txt
