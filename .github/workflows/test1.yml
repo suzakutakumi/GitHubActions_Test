@@ -1,0 +1,14 @@
+name: test1
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: test_dayo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: |
+        cat test.txt
+        echo "1">>test.txt
